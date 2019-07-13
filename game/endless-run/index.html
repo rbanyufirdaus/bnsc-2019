@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Endless Runner</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <canvas id="board"></canvas>
+    <div class="pause-container hidden">
+        <h2>PAUSED</h2>
+        <p>Press <b>P</b> to continue. </p>
+    </div>
+    <div class="lose-container hidden">
+        <h2>GAME OVER</h2>
+        <div class="gameover hidden">
+            <p></p>
+            <button id="btnRestart">Restart</button>
+        </div>
+    </div>
+    <div class="start-container">
+        <img src="assets/img/logo.png" width="150px">
+        <h2>Endless Runner</h2>
+        <p>Control your dragon as far as you can<br>
+            Left click your mouse to move your dragon up<br>
+            You can pause your game by pressing P
+        </p>
+        <button id="btnStart">Start</button>
+    </div>
+
+    <script src="assets/js/object/Background.js"></script>
+    <script src="assets/js/object/Coin.js"></script>
+    <script src="assets/js/object/Obstacle.js"></script>
+    <script src="assets/js/object/Dragon.js"></script>
+    <script src="assets/js/object/Text.js"></script>
+    <script src="assets/js/config.js"></script>
+    <script src="assets/js/Game.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
